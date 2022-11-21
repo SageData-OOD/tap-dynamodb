@@ -65,7 +65,6 @@ def setup_aws_client(config):
             'RoleSessionName': 'TapDynamodDB',
             'ExternalId': config['external_id']
         },
-        cache=JSONFileCache()
     )
 
     refreshable_session = Session()

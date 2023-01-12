@@ -28,7 +28,7 @@ def sync_stream(config, state, stream):
 
     replication_method = metadata.get(md_map, (), 'replication-method')
     # IMPORTANT: DP only LOG BASED replication is supported by us, overwrite settings
-    replication_method = 'LOG_BASED'
+    # replication_method = 'LOG_BASED'
     key_properties = metadata.get(md_map, (), 'table-key-properties')
 
     # write state message with currently_syncing bookmark
